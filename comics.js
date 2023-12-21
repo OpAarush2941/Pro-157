@@ -70,7 +70,7 @@ AFRAME.registerComponent("comics", {
             width:13,
             height:18,
         });
-        entityEl.setAttribute("position", {x:10, y:0, x:0.1});
+        entityEl.setAttribute("position", {x:0, y:0, z:0.1});
         entityEl.setAttribute("material", {src:item.url});
 
         return entityEl
