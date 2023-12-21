@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Virtual Comic Store</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+        <script src="comics.js"></script>
+    </head>
+    <body>
+    <a-scene id="main-scene">
+        <a-sky id="main-container" radius="5000" color="#98CAF9"></a-sky>
+        <a-entity id="comics_container" comics></a-entity>
+        <a-plane id="ground" color="#78909c" width="200" height="100" rotation="-90 0 0"></a-plane>
+        <a-entity id="posters-container" comics-poster></a-entity>
+        <a-camera id="camera" wasd-controls="enabled:false;"></a-camera>
+            <a-entity id="app-title" position="0 2.4 -1" text="font:exo2bold; align:center; width:2; color:#000; value:Virtual Comics Store!"></a-entity>
+            <a-entity id="app-sub-title" position="0 2.3 -1" text="font:exo2bold; align:center; width:1; color:#000; value:Get Your Favourite Comic"></a-entity>
+        </a-camera>
+    </a-scene>
+  </body>
+</html>
